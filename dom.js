@@ -20,3 +20,8 @@ items[0].style.color="green";
 //console.log(header);
 //const h1=document.getElementsByTagName("title");
 //console.log(h1.innerText);
+const itm=document.getElementsByClassName("list-group-item");
+itm[2].style.backgroundColor="green";
+for(let i=0;i<itm.length;i++){
+    itm[i].style.fontWeight="bold";
+}
