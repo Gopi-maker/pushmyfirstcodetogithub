@@ -25,3 +25,11 @@ itm[2].style.backgroundColor="green";
 for(let i=0;i<itm.length;i++){
     itm[i].style.fontWeight="bold";
 }
+
+
+//className method override by tagname method
+const li=document.getElementsByTagName("li");
+li[1].style.color="blue";
+for(let i=0;i<li.length;i++){
+    li[i].style.backgroundColor="#f4f4f4";
+}
