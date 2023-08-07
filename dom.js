@@ -29,7 +29,19 @@ for(let i=0;i<itm.length;i++){
 
 //className method override by tagname method
 const li=document.getElementsByTagName("li");
-li[1].style.color="blue";
+li[3].style.color="blue";
 for(let i=0;i<li.length;i++){
     li[i].style.backgroundColor="#f4f4f4";
+}
+
+const query1=document.querySelector(".list-group-item:nth-child(2)");
+query1.style.backgroundColor="green";
+const query2=document.querySelector(".list-group-item:nth-child(3)");
+query2.style.display="none";
+
+const select1=document.querySelectorAll(".list-group-item");
+select1[1].style.color="green";
+let odd=document.querySelectorAll(".list-group-item:nth-child(odd)");
+for(let i=0;i<odd.length;i++){
+    odd[i].style.background="green";
 }
